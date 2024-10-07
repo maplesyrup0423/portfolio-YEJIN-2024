@@ -12,8 +12,8 @@
   line-height: 1.6;
   font-family: var(--mainKor-font);
   text-transform: uppercase;
-  color: var(--black100);
-  border-bottom: 0.4vw solid var(--black100);
+  color: var(--white);
+  border-bottom: 0.4vw solid var(--white);
   margin-bottom: 100px;
 }
 .site__title em {
@@ -47,6 +47,7 @@
   top: 240px;
 }
 .site__item .num {
+  padding-top: 10px;
   font-size: 5vw;
   line-height: 1;
   font-weight: 900;
@@ -69,7 +70,9 @@
 }
 .site__item .title {
   font-family: var(--mainKor-font);
+  font-size: 1.5em;
   margin-bottom: 1rem;
+  padding: 1em;
 }
 .site__item .btn a {
   text-decoration: underline;
@@ -106,7 +109,7 @@
     height: auto;
     top: 68px;
     z-index: 1000;
-    background-color: var(--mainBg-color);
+    background-color: var(--bg2);
   }
   .site__item.s1 {
     top: 140px;
@@ -134,4 +137,12 @@
     margin-left: 5%;
     padding: 5px 0;
   }
+  .site__item p {
+    display: none;
+  }
+}
+
+.site__item p strong {
+  font-size: 1.6em;
+  font-weight: bold;
 }

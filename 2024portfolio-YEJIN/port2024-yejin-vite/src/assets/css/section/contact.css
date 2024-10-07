@@ -52,7 +52,6 @@
 .contact__lines.top .line {
   margin-top: 0.5vw;
   margin-bottom: 0;
-  display: none;
 }
 .contact__lines.top .line:nth-child(1) {
   height: 1px;
