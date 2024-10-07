@@ -3,7 +3,7 @@
   --mainKor-font: "nanumSquareNeo";
   --mainNum-font: "gmarket";
 
-  --mainBg-color: #f3ede8;
+  --mainBg-color: #eae8f3;
   --subBg100: #cdc0b1;
   --subBg200: #afa395;
   --subBg300: #81887c;
@@ -16,6 +16,9 @@
   --black200: #434343;
   --black300: #686868;
   --black400: #e0e0e0;
+
+  --bg1: #0c0d10;
+  --bg2: #16181b;
 
   /* 기본 폰트 설정 */
   font-family: var(--mainEng-font), var(--mainKor-font);
@@ -41,6 +44,6 @@
 }
 
 body {
-  color: var(--black100);
-  background-color: var(--mainBg-color);
+  color: var(--white);
+  background-color: var(--bg1);
 }

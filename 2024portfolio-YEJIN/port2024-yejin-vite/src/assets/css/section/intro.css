@@ -18,11 +18,13 @@
   white-space: nowrap;
   text-indent: -0.5vw;
   letter-spacing: -0.3vw;
+  margin-left: 20px;
 }
 .intro__text {
+  background-color: #1e1e1e; /* 어두운 배경 */
+  padding: 20px; /* 전체 여백 */
   width: 100%;
   height: 40vh;
-  background-color: #060606;
   color: var(--white);
   display: flex;
   justify-content: space-between;
@@ -37,10 +39,14 @@
   text-align: justify;
   z-index: 100;
 }
-.intro__text .text .about-tit {
-  font-size: 2vw;
+.intro__text .about-tit {
   font-weight: 900;
   margin-bottom: 1em;
+  font-size: 2.5vw;
+  margin-bottom: 1em;
+}
+.intro__text .about-text {
+  font-size: 1.5vw;
 }
 .about-text span {
   font-weight: bold;
@@ -48,76 +54,19 @@
 }
 .intro__text .img {
   width: 15vh;
-  transition: filter 0.3s ease;
+  margin: 1em;
+}
+.intro__text .img img {
+  border-radius: 2em;
 }
 
-.intro__lines {
-  width: 100%;
-}
-.intro__lines .line {
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: #060606;
-  margin-bottom: 0.5vw;
-}
-
-.intro__lines .line:nth-child(1) {
-  height: 1px;
-}
-.intro__lines .line:nth-child(2) {
-  height: 2px;
-}
-.intro__lines .line:nth-child(3) {
-  height: 5px;
-}
-.intro__lines .line:nth-child(4) {
-  height: 9px;
-}
-.intro__lines .line:nth-child(5) {
-  height: 13px;
-}
-.intro__lines .line:nth-child(6) {
-  height: 17px;
-}
-.intro__lines .line:nth-child(7) {
-  height: 25px;
-}
-.intro__lines.bottom .line:nth-child(1) {
-  height: 25px;
-}
-.intro__lines.bottom .line:nth-child(2) {
-  height: 17px;
-}
-.intro__lines.bottom .line:nth-child(3) {
-  height: 13px;
-}
-.intro__lines.bottom .line:nth-child(4) {
-  height: 9px;
-}
-.intro__lines.bottom .line:nth-child(5) {
-  height: 5px;
-}
-.intro__lines.bottom .line:nth-child(6) {
-  height: 2px;
-}
-.intro__lines.bottom .line:nth-child(7) {
-  height: 1px;
-}
 .about-plus {
   width: 100%;
   height: 10vh;
 }
-.intro__text:hover img {
-  filter: grayscale(100%);
-}
-
 @media (max-width: 800px) {
   .intro__inner {
     justify-content: center;
-  }
-  .intro__lines.bottom .line {
-    display: block;
   }
   .intro__text .about-text {
     display: none;

@@ -3,14 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="임예진의 포트폴리오 사이트입니다."
-    />
-    <meta
-      name="keyword"
-      content="포트폴리오"
-    />
+    <meta name="description" content="임예진의 포트폴리오 사이트입니다." />
+    <meta name="keyword" content="포트폴리오" />
     <title>임예진 포트폴리오</title>
 
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
@@ -30,9 +24,15 @@
 
     <header id="header" role="banner">
       <div class="header__inner">
-        <div class="header__logo">
-          <a href="#">portfolio<em>developer</em></a>
+        <div class="header__logos">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="header__logo">
+            <a href="#">portfolio<em>LIM YEJIN</em></a>
+          </div>
         </div>
+
         <nav class="header__nav" role="navigation" aria-label="메인 메뉴">
           <ul>
             <li><a href="#intro">intro</a></li>
@@ -59,83 +59,63 @@
       <section id="intro">
         <div class="intro__inner">
           <h1 class="intro__title">ABOUT ME</h1>
-          <div class="intro__lines" aria-hidden="true">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-          </div>
           <div class="intro__text">
             <div class="text">
               <div class="about-tit">"개발자를 꿈꾸는 저를 소개합니다."</div>
               <div class="about-text">
-                안녕하세요! 저는 <span>명지전문대학교 컴퓨터공학과</span>를 졸업한 <span>임예진</span>입니다.<br/> <br/> 
-                졸업 후 실력을 더욱 키우기 위해 Soldesk에서 [그래픽 기반의 실시간 AI 서비스를 활용한
-                Cross-platform 개발자 양성과정]을 수료하며 웹 개발에 대한 깊은 열정을 키웠습니다. 
-                이 과정에서 JAVA, 데이터베이스, 웹 개발의 기초를 탄탄히 다졌고, 심화 과정에서는 
-                쿼리문 작성과 Spring MVC 패턴을 활용한 비즈니스 로직 구현을 배우며 제 역량을 한층 
-                끌어올렸습니다.<br/> <br/> 
-                학원 수료 후에도 개인적으로 리액트를 사용하여 프로젝트를 개발하며 실력을 계속 쌓고 
-                있습니다. 저는 백엔드 개발자로서의 경력을 쌓고, 새로운 기술에 대한 지속적인 학습을 
-                통해 세상에 긍정적인 영향을 미치는 제품을 만들고자 하는 열망을 가지고 있습니다. 
-                앞으로도 끊임없이 도전하고 성장하는 개발자가 되기 위해 노력하겠습니다. 
-                감사합니다!
-
-
+                안녕하세요! 저는 <span>명지전문대학교 컴퓨터공학과</span>를
+                졸업한 <span>임예진</span>입니다.<br /><br />
+                졸업 후 실력을 더욱 키우기 위해 Soldesk에서 [그래픽 기반의
+                실시간 AI 서비스를 활용한 Cross-platform 개발자 양성과정]을
+                수료하며 웹 개발에 대한 깊은 열정을 키웠습니다. 이 과정에서
+                JAVA, 데이터베이스, 웹 개발의 기초를 탄탄히 다졌고, 심화
+                과정에서는 쿼리문 작성과 Spring MVC 패턴을 활용한 비즈니스 로직
+                구현을 배우며 제 역량을 한층 끌어올렸습니다.<br /><br />
+                학원 수료 후에도 개인적으로 리액트를 사용하여 프로젝트를
+                개발하며 실력을 계속 쌓고 있습니다. 저는 백엔드 개발자로서의
+                경력을 쌓고, 새로운 기술에 대한 지속적인 학습을 통해 세상에
+                긍정적인 영향을 미치는 제품을 만들고자 하는 열망을 가지고
+                있습니다. 앞으로도 끊임없이 도전하고 성장하는 개발자가 되기 위해
+                노력하겠습니다. 감사합니다!
               </div>
             </div>
             <div class="img">
               <img src="assets/img/about.jpg" alt="어바웃" />
             </div>
           </div>
-          <div class="intro__lines bottom" aria-hidden="true">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-          <div>
-          </div>
           <div class="about-plus"></div>
         </div>
       </section>
+
       <!-- //intro -->
 
       <section id="skill">
         <div class="skill__inner">
-          <h2 class="skill__title">skill </h2>
+          <h2 class="skill__title">skill</h2>
           <div class="skill__desc">
-            <div>
-              <ul class="skills-list">
-                <li>
-                    <span class="percentage" data-target="90">0%</span>
-                    <span class="skill-name">Java</span>
-                </li>
-                <li>
-                    <span class="percentage" data-target="80">0%</span>
-                    <span class="skill-name">Spring</span>
-                </li>
-                <li>
-                    <span class="percentage" data-target="75">0%</span>
-                    <span class="skill-name">React</span>
-                </li>
-                <li>
-                    <span class="percentage" data-target="90">0%</span>
-                    <span class="skill-name">Database</span>
-                </li>
+            <ul class="skills-list">
+              <li>
+                <span class="percentage" data-target="90">0%</span>
+                <span class="skill-name">Java</span>
+              </li>
+              <li>
+                <span class="percentage" data-target="80">0%</span>
+                <span class="skill-name">Spring</span>
+              </li>
+              <li>
+                <span class="percentage" data-target="75">0%</span>
+                <span class="skill-name">React</span>
+              </li>
+              <li>
+                <span class="percentage" data-target="90">0%</span>
+                <span class="skill-name">Database</span>
+              </li>
             </ul>
-            
-            </div>
-            </div>
-            <script src="./assets/js/percentage.js"></script>
           </div>
+          <script src="./assets/js/percentage.js"></script>
         </div>
       </section>
+
       <!-- //skill -->
 
       <!-- <section id="site">
@@ -193,54 +173,56 @@
               </a>
               <h3 class="title">sol</h3>
               <p class="desc">
-                사용자들에게 효율적이고 친화적인 소통 공간을 제공하는 
-                소셜 네트워킹 서비스(SNS)입니다. 
-                게시글을 피드 형태로 표시하는 Web Feed와 실시간 메시징 기능을 통합하여 
-                깊이 있는 대화와 즉각적인 소통을 지원합니다. 직관적인 인터페이스로 사용자 경험을 극대화하며,
-                 다양한 주제에 대한 소통을 촉진합니다.
+                사용자들에게 효율적이고 친화적인 소통 공간을 제공하는 소셜
+                네트워킹 서비스(SNS)입니다. 게시글을 피드 형태로 표시하는 Web
+                Feed와 실시간 메시징 기능을 통합하여 깊이 있는 대화와 즉각적인
+                소통을 지원합니다. 직관적인 인터페이스로 사용자 경험을
+                극대화하며, 다양한 주제에 대한 소통을 촉진합니다.
               </p>
-              <a href="sol.html"  class="site">자세히 보기</a>
+              <a href="sol.html" class="site">자세히 보기</a>
             </article>
             <article class="port__item p2">
               <span class="num">02.</span>
-              <a href="" class="img" >
+              <a href="" class="img">
                 <img src="assets/img/port02.jpg" alt="Mentors" />
               </a>
               <h3 class="title">Mentors</h3>
               <p class="desc">
-                교사들을 위한 전문적인 연수 제공 사이트입니다. 사용자는 연수를 구매하고 시청하며 
-                시험에 응시할 수 있는 기능을 제공하여, 교사들의 전문성을 향상시킬 수 있도록 
-                지원합니다. 또한, 각종 이벤트와 도서 정보도 함께 제공하여 사용자들에게 종합적인 
-                학습 경험을 제공합니다.
+                교사들을 위한 전문적인 연수 제공 사이트입니다. 사용자는 연수를
+                구매하고 시청하며 시험에 응시할 수 있는 기능을 제공하여,
+                교사들의 전문성을 향상시킬 수 있도록 지원합니다. 또한, 각종
+                이벤트와 도서 정보도 함께 제공하여 사용자들에게 종합적인 학습
+                경험을 제공합니다.
               </p>
               <a href="" target="_blank" class="site">자세히 보기</a>
             </article>
             <article class="port__item p3">
               <span class="num">03.</span>
-              <a href="" class="img" >
-                <img src="assets/img/port02.jpg" alt="MEMENTO-MORI" />
+              <a href="" class="img">
+                <img src="assets/img/port03.jpg" alt="MEMENTO-MORI" />
               </a>
-              <h3 class="title">MEMENTO MORI
-              </h3>
+              <h3 class="title">MEMENTO MORI</h3>
               <p class="desc">
-                교사들을 위한 전문적인 연수 제공 사이트입니다. 사용자는 연수를 구매하고 시청하며 
-                시험에 응시할 수 있는 기능을 제공하여, 교사들의 전문성을 향상시킬 수 있도록 
-                지원합니다. 또한, 각종 이벤트와 도서 정보도 함께 제공하여 사용자들에게 종합적인 
-                학습 경험을 제공합니다.
+                교사들을 위한 전문적인 연수 제공 사이트입니다. 사용자는 연수를
+                구매하고 시청하며 시험에 응시할 수 있는 기능을 제공하여,
+                교사들의 전문성을 향상시킬 수 있도록 지원합니다. 또한, 각종
+                이벤트와 도서 정보도 함께 제공하여 사용자들에게 종합적인 학습
+                경험을 제공합니다.
               </p>
               <a href="" target="_blank" class="site">자세히 보기</a>
             </article>
             <article class="port__item p4">
               <span class="num">04.</span>
-              <a href="" class="img" >
-                <img src="assets/img/port02.jpg" alt="B-in" />
+              <a href="" class="img">
+                <img src="assets/img/port04.jpg" alt="B-in" />
               </a>
               <h3 class="title">보드 in</h3>
               <p class="desc">
-                교사들을 위한 전문적인 연수 제공 사이트입니다. 사용자는 연수를 구매하고 시청하며 
-                시험에 응시할 수 있는 기능을 제공하여, 교사들의 전문성을 향상시킬 수 있도록 
-                지원합니다. 또한, 각종 이벤트와 도서 정보도 함께 제공하여 사용자들에게 종합적인 
-                학습 경험을 제공합니다.
+                교사들을 위한 전문적인 연수 제공 사이트입니다. 사용자는 연수를
+                구매하고 시청하며 시험에 응시할 수 있는 기능을 제공하여,
+                교사들의 전문성을 향상시킬 수 있도록 지원합니다. 또한, 각종
+                이벤트와 도서 정보도 함께 제공하여 사용자들에게 종합적인 학습
+                경험을 제공합니다.
               </p>
               <a href="" target="_blank" class="site">자세히 보기</a>
             </article>
