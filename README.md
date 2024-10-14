@@ -21,4 +21,4 @@
 - vite를 설치합니다. `npm create vite@latest`
 - gsap를 설치합니다. `npm install gsap`
 - lenis를 설치합니다. `npm install @studio-freight/lenis`
-- [port2024-yejin-vite] 에서 `npm run start` 명령어를 통해 실행합니다.
+- [port2024-yejin-vite] 에서 `npm run dev` 명령어를 통해 실행합니다.
