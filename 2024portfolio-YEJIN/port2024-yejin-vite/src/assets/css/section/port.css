@@ -103,7 +103,7 @@
   display: block;
   text-align: center;
   padding: 0.625rem 1.5rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 @media (max-width: 800px) {
   .port__title {
@@ -135,7 +135,7 @@
   display: grid;
   grid-template-columns: repeat(
     auto-fill,
-    minmax(100px, 1fr)
+    minmax(50px, 1fr)
   ); /* 최소 100px 크기로 자동으로 채우기 */
   gap: 16px; /* 이미지 사이의 간격 */
   background-color: var(--white);
@@ -144,13 +144,13 @@
 .port-skill span {
   color: black;
   font-family: var(--mainKor-font);
-  font-size: 1.2em;
+  font-size: 0.8em;
   font-weight: 900;
   padding: 5px;
 }
 
 .svg-image {
-  width: 80px;
+  width: 60px;
   height: auto;
   margin: auto;
   padding: 5px;
