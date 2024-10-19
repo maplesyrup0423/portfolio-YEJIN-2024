@@ -1,11 +1,12 @@
 import { menu } from "./menu.js";
-import { port } from "./port.js";
+//import { port } from "./port.js";
 import { link } from "./link.js";
 import { smooth } from "./smooth.js";
+import { showPDF } from "./showPDF";
 
 window.addEventListener("load", function () {
   smooth();
   link();
   menu();
-  port();
+  //port();
 });

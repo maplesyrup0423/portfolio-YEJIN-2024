@@ -10,7 +10,7 @@
   flex-direction: column;
 }
 .contact__title {
-  font-size: 10vw;
+  font-size: 5vw;
   text-transform: uppercase;
   line-height: 1;
   font-weight: 800;
@@ -110,5 +110,5 @@
 }
 
 main {
-  margin: 0vh 5vw;
+  margin: 0vh 2vw;
 }

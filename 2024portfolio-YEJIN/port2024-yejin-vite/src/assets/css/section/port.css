@@ -31,10 +31,11 @@
 }
 .port__item {
   width: 26vw;
+  min-width: 400px;
   height: auto;
   background-color: var(--subBg100);
   padding: 2.5rem;
-  margin: 20px;
+  margin: 2vh 1vw;
 }
 .port__item.p1 {
   background-color: var(--subBg100);
@@ -80,12 +81,9 @@
 }
 .port__item .img img {
   border-radius: 5px;
-  filter: saturate(0%);
   transition: all 0.3s;
 }
-.port__item .img:hover img {
-  filter: saturate(100%);
-}
+
 .port__item .title {
   font-size: 1.5rem;
   text-align: center;
@@ -105,6 +103,7 @@
   padding: 0.625rem 1.5rem;
   margin-top: 1rem;
 }
+
 @media (max-width: 800px) {
   .port__title {
     width: 100%;
@@ -116,11 +115,13 @@
     background-color: var(--bg2);
   }
   .port__item {
-    width: 400px;
+    width: 600px;
     padding: 40px 30px;
     height: auto;
   }
-
+  .port-skill {
+    display: none !important;
+  }
   .port-skill span {
     display: none;
   }
@@ -131,6 +132,7 @@
     display: none;
   }
 }
+
 .port-skill {
   display: grid;
   grid-template-columns: repeat(

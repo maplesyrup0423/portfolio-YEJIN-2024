@@ -40,25 +40,3 @@
     background-color: var(--bg2);
   }
 }
-.skills-list {
-  list-style-type: none; /* 기본 불릿 제거 */
-  padding: 3em; /* 패딩 제거 */
-  display: flex; /* 플렉스 박스 사용 */
-  justify-content: space-between; /* 항목 간 공간 배치 */
-}
-
-.skills-list li {
-  margin-right: 20px; /* 항목 간 간격 조절 */
-  text-align: center; /* 텍스트 중앙 정렬 */
-}
-
-.percentage {
-  display: block; /* 블록 요소로 만들어 퍼센트 값을 독립적으로 보이게 함 */
-  font-weight: bold;
-  font-size: 5vw;
-  color: #4caf50;
-}
-.skill-name {
-  font-weight: normal; /* 기술 이름 강조 해제 */
-  font-size: 2vw;
-}
