@@ -15,7 +15,7 @@
   font-family: var(--mainKor-font);
   text-transform: uppercase;
   color: var(--black400);
-  border-bottom: 0.4vw solid var(--black400);
+  border-bottom: 0.4vw solid var(--black300);
   margin-bottom: 16px;
   text-indent: -0.26vw;
 }
@@ -27,14 +27,14 @@
 .port__wrap {
   display: flex;
   flex-wrap: wrap;
-  width: 7000px;
+  justify-content: center; /* 가로 가운데 정렬 */
 }
 .port__item {
-  width: 500px;
+  width: 26vw;
   height: auto;
   background-color: var(--subBg100);
   padding: 2.5rem;
-  margin-right: 20px;
+  margin: 20px;
 }
 .port__item.p1 {
   background-color: var(--subBg100);
@@ -72,11 +72,11 @@
 }
 .port__item .img {
   display: block;
-  margin-top: -20px;
+  margin-top: -5px;
   transition: margin-top 0.3s;
 }
 .port__item:hover .img {
-  margin-top: 0;
+  margin-top: 10px;
 }
 .port__item .img img {
   border-radius: 5px;

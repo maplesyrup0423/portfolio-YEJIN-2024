@@ -13,7 +13,7 @@
   font-family: var(--mainKor-font);
   text-transform: uppercase;
   color: var(--white);
-  border-bottom: 0.4vw solid var(--white);
+  border-bottom: 0.4vw solid var(--black300);
   margin-bottom: 100px;
 }
 .site__title em {

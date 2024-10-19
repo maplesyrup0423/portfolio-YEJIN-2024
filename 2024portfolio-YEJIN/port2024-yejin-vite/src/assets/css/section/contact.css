@@ -108,3 +108,7 @@
     word-break: break-all;
   }
 }
+
+main {
+  margin: 0vh 5vw;
+}
