@@ -131,6 +131,16 @@
 .rounded-box tr:last-child {
   border-bottom: none; /* 마지막 줄의 선 없애기 */
 }
+
+.rounded-box .rb-sub-title {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #949494;
+}
+.rounded-box .td-bold {
+  font-weight: bold;
+  font-size: 1.1em;
+}
 .certificate-of-completion {
   display: inline-block;
   border: 2px solid var(--subBg200);
@@ -145,6 +155,7 @@
 .certificate-of-completion:visited {
   color: #ffffff;
 }
+
 @media (max-width: 800px) {
   .site__title {
     width: 100%;
