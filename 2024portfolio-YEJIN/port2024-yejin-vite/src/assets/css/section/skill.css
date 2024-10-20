@@ -5,7 +5,6 @@
   justify-content: flex-start;
 }
 .skill__title {
-  position: sticky;
   top: 70px;
   left: 0;
   width: 100%;
@@ -15,8 +14,9 @@
   line-height: 1.6;
   font-family: var(--mainKor-font);
   text-transform: uppercase;
-  color: var(--black400);
+  color: var(--white);
   border-bottom: 0.4vw solid var(--black300);
+  margin-bottom: 50px;
 }
 .skill__desc {
   width: 100%;
@@ -25,6 +25,62 @@
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 2;
+}
+
+.skill-boxes {
+  font-family: var(--mainKor-font);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2vh 2vw; /* 박스 간격 */
+  justify-content: center; /* 가로 가운데 정렬 */
+  align-items: center; /* 세로 가운데 정렬 */
+}
+
+.skill-box {
+  width: 40vw;
+  height: auto;
+  min-height: 20vh;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 10px; /* 모서리를 둥글게 */
+  padding: 10px;
+  text-align: center;
+}
+
+.skill-box .rb-title {
+  text-transform: uppercase;
+  font-family: var(--mainKor-font);
+  font-size: 1.5em;
+  font-weight: 900;
+  margin-bottom: 10px;
+  border-bottom: 2px solid var(--black400);
+}
+.skill-box .skill-item img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin: auto;
+}
+
+.skill-box .rb-detail {
+  font-size: 1em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+}
+.skill-box .skill-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 10px;
+  font-size: 1.2em;
+  height: 100px;
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+  border-bottom: 1px solid var(--black400);
 }
 
 @media (max-width: 800px) {
@@ -38,5 +94,8 @@
     height: auto;
     top: 68px;
     background-color: var(--bg2);
+  }
+  .skill-box {
+    width: 80vw;
   }
 }
