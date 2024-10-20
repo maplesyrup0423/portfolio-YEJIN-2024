@@ -3,7 +3,7 @@ import { menu } from "./menu.js";
 import { link } from "./link.js";
 import { smooth } from "./smooth.js";
 import { showPDF } from "./showPDF";
-import { renderSkills } from "./skills.js";
+import { renderSkills } from "../../skills";
 
 window.addEventListener("load", function () {
   smooth();
