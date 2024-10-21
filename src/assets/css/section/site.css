@@ -157,6 +157,14 @@
 }
 
 @media (max-width: 800px) {
+  .rb-detail .License td:nth-child(1),
+  .rb-detail .License td:nth-child(3) {
+    display: none;
+  }
+  .rb-detail .work td:nth-child(2),
+  .rb-detail .work td:nth-child(4) {
+    display: none;
+  }
   .site__title {
     width: 100%;
     margin-bottom: 10vw;
