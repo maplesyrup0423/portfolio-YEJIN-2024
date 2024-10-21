@@ -101,3 +101,38 @@
 main {
   margin: 0vh 2vw;
 }
+
+/* 전체 스크롤바 */
+::-webkit-scrollbar {
+  width: 12px; /* 세로 스크롤바의 너비 */
+  height: 12px; /* 가로 스크롤바의 높이 */
+}
+
+/* 스크롤바 트랙 (바의 배경) */
+::-webkit-scrollbar-track {
+  background-color: #2c2c2c; /* 어두운 배경 */
+  border-radius: 10px;
+}
+
+/* 스크롤바 핸들 (움직이는 부분) */
+::-webkit-scrollbar-thumb {
+  background-color: #555; /* 짙은 회색 핸들 */
+  border-radius: 10px;
+  border: 2px solid #2c2c2c; /* 핸들 외곽선 */
+}
+
+/* 스크롤바 핸들에 마우스를 올렸을 때 */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #888; /* 핸들 hover 시 밝아짐 */
+}
+.cursor {
+  width: 20px;
+  height: 20px;
+  background-color: #ffcd19; /* 구슬 색상 */
+  border-radius: 50%; /* 둥근 구슬 */
+  position: absolute;
+  pointer-events: none; /* 클릭 불가능하게 */
+  transform: translate(-50%, -50%); /* 마우스 중앙에 구슬 위치 */
+  transition: transform 0.1s ease-out; /* 부드러운 움직임 */
+  z-index: 999999;
+}
