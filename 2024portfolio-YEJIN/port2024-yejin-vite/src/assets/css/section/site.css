@@ -5,15 +5,15 @@
   position: sticky;
   top: 70px;
   left: 0;
-  width: 70%;
+  width: 100%;
   height: 5vw;
   font-size: 4vw;
   font-weight: 900;
   line-height: 1.6;
   font-family: var(--mainKor-font);
   text-transform: uppercase;
-  color: var(--black100);
-  border-bottom: 0.4vw solid var(--black100);
+  color: var(--white);
+  border-bottom: 0.4vw solid var(--black300);
   margin-bottom: 100px;
 }
 .site__title em {
@@ -47,7 +47,8 @@
   top: 240px;
 }
 .site__item .num {
-  font-size: 5vw;
+  padding-top: 10px;
+  font-size: 3vw;
   line-height: 1;
   font-weight: 900;
   font-family: var(--mainNum-font);
@@ -69,35 +70,92 @@
 }
 .site__item .title {
   font-family: var(--mainKor-font);
+  font-size: 1.5em;
   margin-bottom: 1rem;
+  padding: 1em;
 }
-.site__item .btn a {
-  text-decoration: underline;
-  text-transform: uppercase;
-  color: var(--black200);
-  font-size: 1rem;
-  transition: all 0.3s;
-}
-.site__item .btn a:hover {
-  color: var(--black);
-}
-.site__item .info {
-  position: absolute;
-  left: 0;
-  bottom: 3%;
-  width: 98%;
-  margin-left: 1%;
-  border-top: 1px solid var(--black);
-  border-bottom: 1px solid var(--black);
-  display: flex;
-  justify-content: space-between;
-}
-.site__item .info span {
+.rounded-boxes {
   font-family: var(--mainKor-font);
-  font-size: 12px;
-  padding: 3px 0;
-  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh 0px; /* 박스 간격 */
 }
+
+.rounded-box {
+  width: 85vw;
+  height: auto;
+  min-height: 20vh;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 10px; /* 모서리를 둥글게 */
+  padding: 10px;
+  text-align: center;
+}
+
+.rounded-box .rb-title {
+  text-transform: uppercase;
+  font-family: var(--mainKor-font);
+  font-size: 1.5em;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.rounded-box .rb-detail {
+  font-size: 1em;
+  display: flex;
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+}
+
+.rounded-box .rb-detail ul {
+  font-size: 1.2em;
+  margin: 20px 0px;
+  width: 400px;
+  padding-left: 0; /* 기본 패딩 제거 */
+  list-style-type: none; /* 기본 리스트 스타일 제거 (원하는 경우) */
+}
+.rounded-box .rb-detail li {
+  text-align: left; /* 텍스트를 왼쪽 정렬 */
+  margin-bottom: 5px; /* 항목 간의 간격을 줄 수 있음 */
+}
+.rounded-box table {
+  width: 80vw;
+  border-collapse: collapse;
+}
+.rounded-box img {
+  width: auto;
+  height: 7vh;
+}
+.rounded-box tr {
+  border-bottom: 1px solid rgb(206, 206, 206); /* 가로선만 */
+}
+.rounded-box tr:last-child {
+  border-bottom: none; /* 마지막 줄의 선 없애기 */
+}
+
+.rounded-box .rb-sub-title {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #949494;
+}
+.rounded-box .td-bold {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.certificate-of-completion {
+  display: inline-block;
+  border: 2px solid var(--subBg200);
+  background-color: var(--subBg200);
+  color: #ffffff;
+  padding: 5px;
+  width: 80px;
+}
+.certificate-of-completion:hover {
+  color: #afafaf;
+}
+.certificate-of-completion:visited {
+  color: #ffffff;
+}
+
 @media (max-width: 800px) {
   .site__title {
     width: 100%;
@@ -106,7 +164,7 @@
     height: auto;
     top: 68px;
     z-index: 1000;
-    background-color: var(--mainBg-color);
+    background-color: var(--bg2);
   }
   .site__item.s1 {
     top: 140px;
@@ -121,17 +179,8 @@
     top: 200px;
   }
   .site__item .num {
-    font-size: 80px;
+    font-size: 40px;
     left: 20px;
     top: 20px;
-  }
-  .site__item .text > div {
-    font-size: 26px;
-  }
-  .site__item .info {
-    flex-direction: column;
-    width: 90%;
-    margin-left: 5%;
-    padding: 5px 0;
   }
 }

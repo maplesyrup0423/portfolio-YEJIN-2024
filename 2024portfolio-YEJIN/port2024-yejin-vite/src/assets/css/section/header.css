@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(116, 99, 99, 0.1);
+  background-color: var(--bg2);
   backdrop-filter: blur(15px);
   padding: 1rem;
 }
@@ -22,7 +22,7 @@
 .header__logo em {
   font-size: 10px;
   display: block;
-  color: var(--black200);
+  color: var(--black400);
 }
 .header__nav li {
   display: inline;
@@ -57,7 +57,7 @@
   display: block;
   width: 40px;
   height: 2px;
-  background-color: var(--black);
+  background-color: var(--white);
   margin-top: 19px;
   position: relative;
 }
@@ -65,7 +65,7 @@
   content: "";
   width: 40px;
   height: 2px;
-  background-color: var(--black);
+  background-color: var(--white);
   position: absolute;
   right: 0;
   top: 6px;
@@ -75,7 +75,7 @@
   content: "";
   width: 40px;
   height: 2px;
-  background-color: var(--black);
+  background-color: var(--white);
   position: absolute;
   left: 0;
   bottom: 6px;
@@ -116,4 +116,31 @@
   .header__nav__mobile {
     display: block;
   }
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 10px;
+}
+
+.circle:nth-child(1) {
+  background-color: #fc5230; /* 빨강 */
+}
+
+.circle:nth-child(2) {
+  background-color: #ffcd4a; /* 노랑 */
+}
+
+.circle:nth-child(3) {
+  background-color: #7cf54b; /* 초록 */
+  margin-right: 20px;
+}
+
+.header__logos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }

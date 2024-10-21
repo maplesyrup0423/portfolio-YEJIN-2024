@@ -3,25 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="한가지 사이트를 다양한 프레임워크를 통해 만들어 보는 포트폴리오 사이트입니다."
-    />
-    <meta
-      name="keyword"
-      content="포트폴리오, 리액트, 뷰, 넥스트, 웹스토리보이, portfolio, react.js, vue.js, next.js, webstoryboy"
-    />
-    <title>포트폴리오 사이트 만들기 😇 Vite-Site</title>
+    <meta name="description" content="임예진의 포트폴리오 사이트입니다." />
+    <meta name="keyword" content="포트폴리오" />
+    <title>임예진 포트폴리오</title>
 
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <div id="skip">
       <a href="#header">헤더 영역 바로가기</a>
       <a href="#intro">소개 영역 바로가기</a>
+      <a href="#Experience">경험 영역 바로가기</a>
       <a href="#skill">스킬 영역 바로가기</a>
-      <a href="#site">사이트 영역 바로가기</a>
       <a href="#port">포트폴리오 영역 바로가기</a>
       <a href="#contact">연락처 영역 바로가기</a>
       <a href="#footer">푸터 영역 바로가기</a>
@@ -30,14 +28,20 @@
 
     <header id="header" role="banner">
       <div class="header__inner">
-        <div class="header__logo">
-          <a href="#">portfolio<em>developer</em></a>
+        <div class="header__logos">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="header__logo">
+            <a href="#">portfolio<em>LIM YEJIN</em></a>
+          </div>
         </div>
+
         <nav class="header__nav" role="navigation" aria-label="메인 메뉴">
           <ul>
             <li><a href="#intro">intro</a></li>
+            <li><a href="#Experience">Experience</a></li>
             <li><a href="#skill">skill</a></li>
-            <li><a href="#site">site</a></li>
             <li><a href="#port">portfolio</a></li>
             <li><a href="#contact">contact</a></li>
           </ul>
@@ -58,169 +62,448 @@
     <main id="main" role="main">
       <section id="intro">
         <div class="intro__inner">
-          <h1 class="intro__title">port developer</h1>
-          <div class="intro__lines" aria-hidden="true">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-          </div>
+          <h1 class="intro__title">ABOUT ME</h1>
           <div class="intro__text">
             <div class="text">
-              <div>talent is</div>
-              <div>found at the end of the</div>
-              <div>effort</div>
+              <div class="about-tit">"개발자를 꿈꾸는 저를 소개합니다."</div>
+              <div class="about-text">
+                안녕하세요! 저는 <span>명지전문대학교 컴퓨터공학과</span>를
+                졸업한 <span>임예진</span>입니다.<br /><br />
+                졸업 후 실력을 더욱 키우기 위해 Soldesk에서 [그래픽 기반의
+                실시간 AI 서비스를 활용한 Cross-platform 개발자 양성과정]을
+                수료하며 웹 개발에 대한 깊은 열정을 키웠습니다. 이 과정에서
+                JAVA, 데이터베이스, 웹 개발의 기초를 탄탄히 다졌고, 심화
+                과정에서는 쿼리문 작성과 Spring MVC 패턴을 활용한 비즈니스 로직
+                구현을 배우며 제 역량을 한층 끌어올렸습니다.<br /><br />
+                학원 수료 후에도 개인적으로 리액트를 사용하여 프로젝트를
+                개발하며 실력을 계속 쌓고 있습니다. 저는 풀스택 개발자로서의
+                경력을 쌓고, 새로운 기술에 대한 지속적인 학습을 통해 세상에
+                긍정적인 영향을 미치는 제품을 만들고자 하는 열망을 가지고
+                있습니다. 앞으로도 끊임없이 도전하고 성장하는 개발자가 되기 위해
+                노력하겠습니다. 감사합니다!
+              </div>
             </div>
             <div class="img">
               <img src="assets/img/about.jpg" alt="어바웃" />
             </div>
           </div>
-          <div class="intro__lines bottom" aria-hidden="true">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-          </div>
+          <div class="about-plus"></div>
         </div>
       </section>
+
       <!-- //intro -->
 
-      <section id="skill">
-        <div class="skill__inner">
-          <h2 class="skill__title">Challenge <em>나의 도전</em></h2>
-          <div class="skill__desc">
-            <div>
-              <span>1.</span>
-              <h3>꿈을 설계하고 디자인하다.</h3>
-              <p>
-                나는 공간을 만드는 것을 좋아한다. 어려을 때부터 나만의 공간을
-                만드는 것을 좋아했고 나만의 다락방을 좋아했다. 단 한 사람이라도
-                내가 만든 공간 속에서 영감을 받거나 마음이 움직였으면 좋겠다.
-                나만의 공간을 마음것 만들 수 있다는 건 코딩에 엄청난 매력인거
-                같다. 그 한구석에 나만의 꿈을 설계하고, 개발을 하며 앞으로도
-                살고 싶다.
-              </p>
-            </div>
-            <div>
-              <span>2.</span>
-              <h3>열심히 할수록 기회는 따른다.</h3>
-              <p>
-                운이 좋은 사람은 없다. 단지 운을 만들 뿐이다. 운을 만들기
-                위해서는 내가 좋아하는 일이나 내가 하고 싶은 일에 몰두하면 된다.
-                몰두 하다보면 길이 보이고 방향이 보이게 된다. 운이란 고된 노동과
-                노력을 통해 스스로 만들어 내는 것이다.
-              </p>
-            </div>
-            <div>
-              <span>3.</span>
-              <h3>나에게 정직하다.</h3>
-              <p>
-                정직은 다른 사람보다 나에게 큰 의미를 부여해야 한다. 자신이
-                정직하지 않으면 진정으로 원하는 일을 열정적으로 밀고 나갈 수
-                없다. 마음에서 우러나오는 일을 해야 정직해지며 삶을 더 즐길 줄
-                알게 된다.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- //skill -->
-
-      <section id="site">
+      <section id="Experience">
         <div class="site__inner">
-          <h2 class="site__title">Site coding <em>나의 작업물</em></h2>
+          <h2 class="site__title">Experience <em>나의 경험</em></h2>
           <div class="site__wrap">
             <article class="site__item s1">
-              <span class="num">1.</span>
-              <div class="text">
-                <div>Make</div>
-                <div>site compliant with</div>
-                <div>webstandard</div>
-              </div>
-              <h3 class="title">웹 표준을 준수한 사이트 제작</h3>
-              <div class="btn">
-                <a href="">code</a>
-                <a href="">view</a>
-              </div>
-              <div class="info">
-                <span>site coding</span>
-                <span>production period : two days</span>
-                <span>use stack : html5/css3, CSS Variable, Vite</span>
+              <span class="num"></span>
+              <div class="rounded-boxes">
+                <div class="rounded-box">
+                  <div class="rb-title">
+                    <i class="fas fa-info-circle"></i> about me
+                  </div>
+                  <div class="rb-detail">
+                    <ul>
+                      <li>임예진</li>
+                      <li>2000.04.23.</li>
+                      <li>이메일 : maplesyrup0423@naver.com</li>
+                      <li>휴대폰 : 010-8734-4177</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="rounded-box">
+                  <div class="rb-title">
+                    <i class="fas fa-graduation-cap"></i> 학력
+                  </div>
+                  <div class="rb-sub-title">[컴퓨터공학과 (3년제) 졸업]</div>
+
+                  <div class="rb-detail">
+                    <table>
+                      <tr>
+                        <th>
+                          <img
+                            src="./assets/img/Education/symbol_logo.png"
+                            alt=""
+                          />
+                        </th>
+                        <td>2016.03 ~ 2019.02</td>
+                        <td>경기국제통상고등학교</td>
+                        <td>국제경영정보</td>
+                        <td>특성화고</td>
+                      </tr>
+                      <tr>
+                        <th>
+                          <img src="./assets/img/Education/BS-17.jpg" alt="" />
+                        </th>
+                        <td>2020.03 ~ 2023.02</td>
+                        <td class="td-bold">명지전문대학</td>
+                        <td class="td-bold">컴퓨터공학과</td>
+                        <td>(서울 | 주간)</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
               </div>
             </article>
             <article class="site__item s2">
-              <span class="num">2.</span>
-              <div class="text">
-                <div>Make</div>
-                <div>site compliant with</div>
-                <div>react.js</div>
+              <span class="num"></span>
+              <div class="rounded-boxes">
+                <div class="rounded-box">
+                  <div class="rb-title">
+                    <i class="fas fa-book"></i> Education
+                  </div>
+                  <div class="rb-detail">
+                    <table>
+                      <tr>
+                        <th>
+                          <img
+                            src="./assets/img/Education/bfe794ac46524.png"
+                            alt=""
+                          />
+                        </th>
+                        <td>2023.10 ~ 2024.04</td>
+                        <td>솔데스크</td>
+                        <td class="td-bold">
+                          그래픽 기반의 실시간 AI서비스를 활용한 cross-platform
+                          개발자 양성과정
+                        </td>
+                        <td>
+                          <a
+                            href="#"
+                            onclick="showPDF('./assets/pdf/그래픽 기반의 실시간 AI서비스를 활용한 cross-platform 개발자 양성과정 수료증 임예진.pdf')"
+                            target="_blank"
+                            class="certificate-of-completion"
+                            >수료증</a
+                          >
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="rounded-box">
+                  <div class="rb-title">
+                    <i class="fas fa-award"></i> License
+                  </div>
+                  <div class="rb-detail">
+                    <table>
+                      <tr>
+                        <td>2024.05</td>
+                        <td>2종보통운전면허</td>
+                        <td>최종합격</td>
+                        <td>경찰청(운전면허시험관리단)</td>
+                      </tr>
+                      <tr>
+                        <td>2018.04</td>
+                        <td>컴퓨터활용능력 2급</td>
+                        <td>최종합격</td>
+                        <td>대한상공회의소</td>
+                      </tr>
+                      <tr>
+                        <td>2018.08</td>
+                        <td>전산세무 2급 (국가공인)</td>
+                        <td>최종합격</td>
+                        <td>한국세무사회</td>
+                      </tr>
+                      <tr>
+                        <td>2018.08</td>
+                        <td>전산회계 1급 (국가공인)</td>
+                        <td>최종합격</td>
+                        <td>한국세무사회</td>
+                      </tr>
+                      <tr>
+                        <td>2018.05</td>
+                        <td>전산회계운용사 3급</td>
+                        <td>최종합격</td>
+                        <td>대한상공회의소</td>
+                      </tr>
+                      <tr>
+                        <td>2017.06</td>
+                        <td>ERP인사정보관리사 2급</td>
+                        <td>최종합격</td>
+                        <td>한국생산성본부</td>
+                      </tr>
+                      <tr>
+                        <td>2017.05</td>
+                        <td>AT(FAT 2급)</td>
+                        <td>최종합격</td>
+                        <td>한국공인회계사회</td>
+                      </tr>
+                      <tr>
+                        <td>2017.04</td>
+                        <td>전산회계 2급 (국가공인)</td>
+                        <td>최종합격</td>
+                        <td>한국세무사회</td>
+                      </tr>
+                      <tr>
+                        <td>2017.02</td>
+                        <td>ERP회계정보관리사 2급</td>
+                        <td>최종합격</td>
+                        <td>한국생산성본부</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
               </div>
-              <h3 class="title">리액트를 이용한 사이트 제작</h3>
-              <div class="btn">
-                <a href="">code</a>
-                <a href="">view</a>
-              </div>
-              <div class="info">
-                <span>site coding</span>
-                <span>production period : two days</span>
-                <span>use stack : HTML5/CSS3, CSS Variable, Vite</span>
+            </article>
+            <article class="site__item s3">
+              <span class="num"></span>
+              <div class="rounded-boxes">
+                <div class="rounded-box">
+                  <div class="rb-title">
+                    <i class="fas fa-building"></i> work
+                  </div>
+                  <div class="rb-detail">
+                    <table>
+                      <tr>
+                        <td>2023.01 ~ 2023.03</td>
+                        <td>3개월</td>
+                        <td>세주실업</td>
+                        <td>외주관리</td>
+                      </tr>
+                      <tr>
+                        <td>2021.01 ~ 2022.06</td>
+                        <td>1년 6개월</td>
+                        <td>하우스터디</td>
+                        <td>총무</td>
+                      </tr>
+                      <tr>
+                        <td>2019.10 ~ 2020.02</td>
+                        <td>5개월</td>
+                        <td>세주실업</td>
+                        <td>경영관리</td>
+                      </tr>
+                      <tr>
+                        <td>2019.04 ~ 2019.06</td>
+                        <td>3개월</td>
+                        <td>이돈영세무회계사무소</td>
+                        <td>세무기장</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
               </div>
             </article>
           </div>
         </div>
       </section>
-      <!-- //site -->
+      <!-- //Experience -->
+      <section id="skill">
+        <div class="skill__inner">
+          <h2 class="skill__title">skill <em>기술</em></h2>
+          <div class="skill__desc"></div>
+
+          <div class="skill-boxes" id="skill-container"></div>
+        </div>
+      </section>
+
+      <!-- //skill -->
+
       <section id="port">
         <div class="port__inner">
           <div class="port__title">portfolio <em>포폴 작업물</em></div>
           <div class="port__wrap">
             <article class="port__item p1">
               <span class="num">01.</span>
-              <a href="" target="_blank" class="img">
-                <img src="assets/img/port01.jpg" alt="김상준 포트폴리오" />
+              <span> 웹앱 || 2024.08~2024.09 (5명, 2개월) </span>
+              <a href="" class="img">
+                <img src="assets/img/port01.jpg" alt="sol" />
               </a>
-              <h3 class="title">어워드에도 올라간 포트폴리오</h3>
+              <h3 class="title">sol</h3>
               <p class="desc">
-                라마 디자인을 통해 자신의 스킬을 가장 멋지게 표현한
-                포트폴리오입니다. 가로 모드와 세로 모드는 매우 인상적이며 특히
-                리액트와 비트를 이용하여 제작한 것은 더욱 놀랍습니다. 이
-                사이트는 awwwards.com에도 인정받아 올라간 포트폴리오입니다.
-                확실히 그의 뛰어난 디자인 스킬과 기술력이 빛을 발휘한 결과물인
-                것 같습니다.
+                사용자들에게 효율적이고 친화적인 소통 공간을 제공하는 소셜
+                네트워킹 서비스(SNS)입니다. 게시글을 피드 형태로 표시하는 Web
+                Feed와 실시간 메신저 기능을 통합하여 깊이 있는 대화와 즉각적인
+                소통을 지원합니다. 직관적인 인터페이스로 사용자 경험을
+                극대화하며, 다양한 주제에 대한 소통을 촉진합니다.
               </p>
-              <a href="" target="_blank" class="site">사이트 보기</a>
+              <a href="" target="_blank" class="site">자세히 보기(미완)</a>
+              <a href="" target="_blank" class="site">시연영상 보기(미완)</a>
+              <a
+                href="https://github.com/maplesyrup0423/sol_pj"
+                target="_blank"
+                class="site"
+                >코드 보기</a
+              >
+              <div class="port-skill">
+                <img class="svg-image" src="./assets/img/리액트.svg" alt="" />
+                <img class="svg-image" src="./assets/img/비트.svg" alt="" />
+                <img class="svg-image" src="./assets/img/노드.svg" alt="" />
+                <img
+                  class="svg-image"
+                  src="https://labs.mysql.com/common/logos/mysql-logo.svg"
+                  alt=""
+                />
+                <img
+                  class="svg-image"
+                  src="./assets/img/MySQL-Workbench.jpg"
+                  alt=""
+                />
+                <img class="svg-image" src="./assets/img/git.svg" alt="" />
+                <img class="svg-image" src="./assets/img/github2.svg" alt="" />
+                <img class="svg-image" src="./assets/img/vsCode.svg" alt="" />
+                <div>
+                  <span>Express.js</span> <span>Websocket</span><br /><span
+                    >JSX</span
+                  >
+                </div>
+                <img class="svg-image" src="./assets/img/html-5.png" alt="" />
+                <img class="svg-image" src="./assets/img/js.png" alt="" />
+                <img class="svg-image" src="./assets/img/css-3.png" alt="" />
+              </div>
             </article>
             <article class="port__item p2">
               <span class="num">02.</span>
-              <a href="" class="img" target="_blank">
-                <img src="assets/img/port02.jpg" alt="천설희 포트폴리오" />
+              <span> 웹앱 || 2024.02~2024.03 (6명, 1개월) </span>
+              <a href="" class="img">
+                <img src="assets/img/port02.jpg" alt="Mentors" />
               </a>
-              <h3 class="title">빛나는 밤에 포트폴리오</h3>
+              <h3 class="title">Mentors</h3>
               <p class="desc">
-                이 사이트는 정말 인상적인 포트폴리오입니다. 특히 스무스한 효과와
-                가로 모드드 높은 퀄리티를 자랑합니다. 디테일과 꼼꼼함이 넘치는
-                포트폴리오는 개발자의 뛰어난 능력을 엿볼 수 있습니다. GSAP와
-                React.js를 이용하여 사이트를 표현한 것은 기술적인 능력과
-                창의성을 강조하는데, 부족함이 없으며, 세심한 코딩과 디테일한
-                작업으로 그의 개발 감각과 능력이 빛을 발휘한 것 같습니다.
+                교사들을 위한 전문적인 연수 제공 사이트입니다. 사용자는 연수를
+                구매하고 시청하며 시험에 응시할 수 있는 기능을 제공하여,
+                교사들의 전문성을 향상시킬 수 있도록 지원합니다. 또한, 각종
+                이벤트와 도서 정보도 함께 제공하여 사용자들에게 종합적인 학습
+                경험을 제공합니다.
               </p>
-              <a href="" target="_blank" class="site">사이트 보기</a>
+              <a href="" class="site" target="_blank">자세히 보기(미완)</a>
+              <a href="" class="site" target="_blank">시연영상 보기(미완)</a>
+              <a
+                href="https://github.com/maplesyrup0423/intp_mentors"
+                target="_blank"
+                class="site"
+                >코드 보기</a
+              >
+              <div class="port-skill">
+                <img
+                  class="svg-image"
+                  width="100px"
+                  src="./assets/img/spring-web-mvc.png"
+                  alt=""
+                />
+                <img class="svg-image" src="./assets/img/git.svg" alt="" />
+                <img class="svg-image" src="./assets/img/github2.svg" alt="" />
+                <img class="svg-image" src="./assets/img/jsp.png" alt="" />
+                <img class="svg-image" src="./assets/img/html-5.png" alt="" />
+                <img class="svg-image" src="./assets/img/js.png" alt="" />
+                <img class="svg-image" src="./assets/img/css-3.png" alt="" />
+                <img class="svg-image" src="./assets/img/이클립스.png" alt="" />
+                <img class="svg-image" src="./assets/img/오라클.png" alt="" />
+                <img class="svg-image" src="./assets/img/톰.png" alt="" />
+              </div>
+            </article>
+            <article class="port__item p3">
+              <span class="num">03.</span>
+              <span> 웹앱 || 2024 (1명) </span>
+              <a href="" class="img">
+                <img src="assets/img/port03.jpg" alt="B-in" />
+              </a>
+              <h3 class="title">PORTFOLIO</h3>
+
+              <p class="desc">
+                이 포트폴리오 사이트는 다양한 프로젝트와 경험을 한눈에 볼 수
+                있는 플랫폼입니다. 사용자는 저의 기술적 역량과 프로젝트 수행
+                능력을 확인할 수 있으며, 각 프로젝트에 대한 상세한 설명과 GitHub
+                링크를 통해 실제 작업물을 직접 살펴볼 수 있습니다. 또한,
+                사이트는 반응형 디자인으로 다양한 기기에서 최적의 사용자 경험을
+                제공합니다. 제 개발 여정을 공유하고, 새로운 기회와 협업을 위한
+                포트폴리오를 구성하여, 지속적인 성장과 발전을 이루고자 합니다.
+              </p>
+              <a href="" class="site">사이트 보기</a>
+              <a
+                href="https://github.com/maplesyrup0423/portfolio-YEJIN-2024"
+                target="_blank"
+                class="site"
+                >코드 보기</a
+              >
+              <div class="port-skill">
+                <img class="svg-image" src="./assets/img/비트.svg" alt="" />
+                <img class="svg-image" src="./assets/img/html-5.png" alt="" />
+                <img class="svg-image" src="./assets/img/Vanilla.jpg" alt="" />
+                <img class="svg-image" src="./assets/img/css-3.png" alt="" />
+                <img class="svg-image" src="./assets/img/git.svg" alt="" />
+                <img class="svg-image" src="./assets/img/github2.svg" alt="" />
+                <img class="svg-image" src="./assets/img/vsCode.svg" alt="" />
+              </div>
+            </article>
+            <article class="port__item p4">
+              <span class="num">04.</span>
+              <span> 게임 || 2022.03~2022.12 (4명, 10개월) </span>
+              <a href="" class="img">
+                <img src="assets/img/port04.jpg" alt="MEMENTO-MORI" />
+              </a>
+              <h3 class="title">MEMENTO MORI</h3>
+              <p class="desc">
+                유니티 엔진으로 개발된 PC용 2D 방탈출 게임입니다. 기존 방탈출
+                게임과 차별화된 점은 사망 요소와 보스전이 포함되어 있다는
+                것입니다. 긴장감 넘치는 퍼즐과 스릴 넘치는 전투를 동시에 즐길 수
+                있는 독특한 경험을 제공합니다.
+              </p>
+              <a href="" class="site">자세히 보기(미완)</a>
+              <a
+                href="https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE11213545"
+                target="_blank"
+                class="site"
+                >논문 사이트 보기</a
+              >
+              <a
+                href="#"
+                onclick="showPDF('./assets/pdf/액션 어드벤처 장르를 접목한 방 탈출 게임 구현, ‘Memento Mori’.pdf')"
+                target="_blank"
+                class="site"
+                >논문 PDF 보기</a
+              >
+              <div class="port-skill">
+                <img class="svg-image" src="./assets/img/c-sharp.png" alt="" />
+                <img class="svg-image" src="./assets/img/유니티.png" alt="" />
+                <img class="svg-image" src="./assets/img/git.svg" alt="" />
+                <img class="svg-image" src="./assets/img/github2.svg" alt="" />
+              </div>
+            </article>
+            <article class="port__item p5">
+              <span class="num">05.</span>
+              <span> 애플리케이션 || 2022.05~2022.06 (2명, 2개월) </span>
+              <a href="" class="img">
+                <img src="assets/img/port05.jpg" alt="B-in" />
+              </a>
+              <h3 class="title">보드 in</h3>
+              <p class="desc">
+                보드게임을 난이도, 시간, 인원수로 필터링하여 검색할 수 있는
+                안드로이드 앱입니다. 각 보드게임의 상세 정보를 제공하며, 게임
+                방법을 설명하는 유튜브 링크도 포함되어 있습니다. 사용자는
+                간편하게 보드게임을 탐색하고 학습할 수 있습니다.
+              </p>
+              <a href="" class="site">자세히 보기(미완)</a>
+              <a href="" class="site" target="_blank">시연영상 보기(미완)</a>
+              <div class="port-skill">
+                <img class="svg-image" src="./assets/img/java.png" alt="" /><img
+                  class="svg-image"
+                  src="./assets/img/php.png"
+                  alt=""
+                />
+                <img
+                  class="svg-image"
+                  src="./assets/img/안드로이드.png"
+                  alt=""
+                />
+                <img class="svg-image" src="./assets/img/안드.png" alt="" />
+                <img
+                  class="svg-image"
+                  src="./assets/img/MySQL-Workbench.jpg"
+                  alt=""
+                />
+              </div>
             </article>
           </div>
         </div>
       </section>
-      <!-- //port -->=
+      <!-- //port -->
 
       <section id="contact">
         <div class="contact__inner">
           <h2 class="contact__title">Contact</h2>
-          <div class="contact__lines" aria-hidden="true">
+          <div class="contact__lines top" aria-hidden="true">
             <span class="line"></span>
             <span class="line"></span>
             <span class="line"></span>
@@ -237,8 +520,8 @@
                 >
               </div>
               <div>
-                <a href="mailto:maplesyrup0423@NAVER.COM" target="_blank"
-                  >MAIL : maplesyrup0423@NAVER.COM</a
+                <a href="mailto:maplesyrup0423@naver.com" target="_blank"
+                  >MAIL : maplesyrup0423@naver.com</a
                 >
               </div>
               <div>

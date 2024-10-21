@@ -1,5 +1,5 @@
 #contact {
-  height: 100vh;
+  height: 80vh;
 }
 .contact__inner {
   width: 100%;
@@ -10,7 +10,7 @@
   flex-direction: column;
 }
 .contact__title {
-  font-size: 10vw;
+  font-size: 5vw;
   text-transform: uppercase;
   line-height: 1;
   font-weight: 800;
@@ -52,7 +52,6 @@
 .contact__lines.top .line {
   margin-top: 0.5vw;
   margin-bottom: 0;
-  display: none;
 }
 .contact__lines.top .line:nth-child(1) {
   height: 1px;
@@ -97,15 +96,8 @@
   height: 1px;
 }
 @media (max-width: 800px) {
-  .contact__title {
-    display: none;
-  }
-  .contact__lines.top .line {
-    display: block;
-  }
-  .contact__text .text {
-    font-size: 24px;
-    padding: 0 16px;
-    word-break: break-all;
-  }
+}
+
+main {
+  margin: 0vh 2vw;
 }

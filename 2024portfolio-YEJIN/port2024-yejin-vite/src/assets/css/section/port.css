@@ -1,6 +1,5 @@
 #port {
   width: 100%;
-  margin-top: 30vh;
   overflow: hidden;
 }
 .port__inner {
@@ -14,8 +13,8 @@
   line-height: 1.6;
   font-family: var(--mainKor-font);
   text-transform: uppercase;
-  color: var(--black100);
-  border-bottom: 0.4vw solid var(--black100);
+  color: var(--black400);
+  border-bottom: 0.4vw solid var(--black300);
   margin-bottom: 16px;
   text-indent: -0.26vw;
 }
@@ -27,14 +26,15 @@
 .port__wrap {
   display: flex;
   flex-wrap: wrap;
-  width: 7000px;
+  justify-content: center; /* 가로 가운데 정렬 */
 }
 .port__item {
-  width: 500px;
-  height: 70vh;
+  width: 26vw;
+  min-width: 400px;
+  height: auto;
   background-color: var(--subBg100);
   padding: 2.5rem;
-  margin-right: 20px;
+  margin: 2vh 1vw;
 }
 .port__item.p1 {
   background-color: var(--subBg100);
@@ -72,39 +72,37 @@
 }
 .port__item .img {
   display: block;
-  margin-top: -20px;
+  margin-top: -5px;
   transition: margin-top 0.3s;
 }
 .port__item:hover .img {
-  margin-top: 0;
+  margin-top: 10px;
 }
 .port__item .img img {
   border-radius: 5px;
-  filter: saturate(0%);
   transition: all 0.3s;
 }
-.port__item .img:hover img {
-  filter: saturate(100%);
-}
+
 .port__item .title {
   font-size: 1.5rem;
   text-align: center;
   padding: 0.8rem 0;
   font-weight: 700;
-  color: var(--black100);
-  border-bottom: 2px solid var(--black100);
+  color: var(--white);
+  border-bottom: 2px solid var(--white);
   margin-bottom: 1rem;
 }
 .port__item .desc {
   font-size: 1rem;
 }
 .port__item .site {
-  border: 1px solid var(--black100);
+  border: 1px solid var(--white);
   display: block;
   text-align: center;
   padding: 0.625rem 1.5rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
+
 @media (max-width: 800px) {
   .port__title {
     width: 100%;
@@ -113,11 +111,48 @@
     height: auto;
     top: 68px;
     z-index: 1000;
-    background-color: var(--mainBg-color);
+    background-color: var(--bg2);
   }
   .port__item {
-    width: 400px;
+    width: 600px;
     padding: 40px 30px;
     height: auto;
   }
+  .port-skill {
+    display: none !important;
+  }
+  .port-skill span {
+    display: none;
+  }
+  .svg-image {
+    display: none;
+  }
+  .port__item .desc {
+    display: none;
+  }
+}
+
+.port-skill {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(50px, 1fr)
+  ); /* 최소 100px 크기로 자동으로 채우기 */
+  gap: 16px; /* 이미지 사이의 간격 */
+  background-color: var(--white);
+  margin-top: 25px;
+}
+.port-skill span {
+  color: black;
+  font-family: var(--mainKor-font);
+  font-size: 0.8em;
+  font-weight: 900;
+  padding: 5px;
+}
+
+.svg-image {
+  width: 60px;
+  height: auto;
+  margin: auto;
+  padding: 5px;
 }
