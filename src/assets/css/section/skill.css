@@ -38,16 +38,19 @@
 }
 
 .skill-box {
-  width: 40vw;
+  width: 29vw;
   height: auto;
-  min-height: 20vh;
+  min-height: 30vh;
   background-color: #ffffff;
   color: black;
   border-radius: 10px; /* 모서리를 둥글게 */
   padding: 10px;
   text-align: center;
 }
-
+.skill-box:hover .rb-title {
+  margin-bottom: 20px;
+  background-color: #d8d8d8;
+}
 .skill-box .rb-title {
   text-transform: uppercase;
   font-family: var(--mainKor-font);
@@ -55,10 +58,13 @@
   font-weight: 900;
   margin-bottom: 10px;
   border-bottom: 2px solid var(--black400);
+  transition: 0.3s;
+  border-radius: 10px;
+  background-color: #ffffff;
 }
 .skill-box .skill-item img {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
   margin: auto;
 }
@@ -82,7 +88,20 @@
   align-items: center; /* 수직 가운데 정렬 */
   border-bottom: 1px solid var(--black400);
 }
-
+@media (max-width: 1500px) {
+  .skill-box {
+    width: 40vw;
+    min-height: 20vh;
+  }
+  .skill-box .skill-item img {
+    width: 45px;
+    height: 45px;
+  }
+  .skill-box .skill-item {
+    font-size: 1.1em;
+    height: 85px;
+  }
+}
 @media (max-width: 800px) {
   .skill__inner {
     flex-direction: column;
@@ -97,5 +116,15 @@
   }
   .skill-box {
     width: 80vw;
+    min-height: 0vh;
+  }
+
+  .skill-box .skill-item img {
+    width: 50px;
+    height: 50px;
+  }
+  .skill-box .skill-item {
+    font-size: 1em;
+    height: 70px;
   }
 }
